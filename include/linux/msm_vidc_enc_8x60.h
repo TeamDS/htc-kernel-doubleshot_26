@@ -607,10 +607,12 @@ struct venc_msg{
 };
 
 struct venc_recon_addr{
+	unsigned char *pbuffer;
 	unsigned long buffer_size;
 	unsigned long pmem_fd;
 	unsigned long offset;
 };
+
 
 struct venc_recon_buff_size{
 	int width;
